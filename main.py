@@ -23,7 +23,7 @@ def draw_image(img: Image.Image):
 
 mandel = Mandel(-2, 2, -2 * aspect_ratio, 2 * aspect_ratio, iterations)
 a = make_array_cuda(mandel.min_x, mandel.max_x, mandel.min_y, mandel.max_y, iterations)
-
+# hello test
 s.blit(p.surfarray.make_surface(np.array(a.resize(a.size, Image.ANTIALIAS))), (0, 0))
 p.display.update()
 surf = p.surfarray.make_surface(np.array(a))
