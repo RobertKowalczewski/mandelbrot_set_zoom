@@ -39,7 +39,7 @@ def mandel(min_x, min_y, iterations, pixel_size_x, pixel_size_y, out):
             out[x, y] = i
             break
 
-
+# chnage 2
 def make_array_cuda(x_min, x_max, y_min, y_max, iterations):
     out = np.zeros(resolution, dtype=np.int8)
     pixel_size_x = (x_max - x_min) / resolution[0]
